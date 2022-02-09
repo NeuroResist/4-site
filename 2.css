@@ -1,0 +1,252 @@
+h1, h2, form, body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.header{
+    color: white;
+    background: url("img2/banner.jpg") no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+.content__title{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.content__text{
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+
+}
+.content__button{
+    vertical-align: top;
+    outline: none;
+    height: 70px;
+    width: 200px;
+    margin-top: 20px;
+    border: 3px white solid;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.blocks{
+    display: grid;
+    grid-template-areas:
+            "authority move move"
+            "strength strength instinct"
+            "travel connection connection";
+
+    grid-template-rows: 409px 409px 409px;
+}
+.block{
+    background-color: coral;
+    border: red 1px dotted;
+    text-align: center;
+
+}
+.authority{
+    grid-area: authority;
+    background-image: url("img2/pic01.jpg") ;
+    background-position: center;
+    vertical-align: center;
+    position: relative;
+
+}
+.authority:after{
+    width: 100%;
+    height: 100%;
+    background-color: #50ebff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0.5;
+}
+.move:after{
+    width: 100%;
+    height: 100%;
+    background-color: #c15ffa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0.5;
+}
+.strength:after{
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0.5;
+}
+.instinct:after{
+    width: 100%;
+    height: 100%;
+    background-color: #f39e7f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0.5;
+}
+.travel:after{
+    width: 100%;
+    height: 100%;
+    background-color: #6ea4f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0.5;
+}
+.connection:after{
+    width: 100%;
+    height: 100%;
+    background-color: #97f8a7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0.5;
+}
+.move{
+    grid-area: move;
+    background-image: url("img2/pic02.jpg") ;
+    background-position: center;
+position: relative;
+}
+.strength{
+    position: relative;
+
+    grid-area: strength;
+    background-image: url("img2/pic03.jpg") ;
+    background-position: center;
+}
+.instinct{
+    position: relative;
+
+    grid-area: instinct;
+    background-image: url("img2/pic04.jpg") ;
+    background-position: center;
+}
+.travel{
+    grid-area: travel;
+    background-image: url("img2/pic05.jpg") ;
+    background-position: center;
+    position: relative;
+
+}
+.connection{
+    position: relative;
+
+    background-image: url("img2/pic06.jpg") ;
+    background-position: center;
+    grid-area: connection;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block__header{
+    color: white;
+    font-size: 46px;
+    font-weight: 500;
+    border-bottom: white 3px solid;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+.block__text{
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.about-me__header{
+    text-align: center;
+    color: white;
+    font-size: 46px;
+    font-weight: 500;
+    border-bottom: white 3px solid;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.about-me__text{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.about-me__button{
+    vertical-align: top;
+    outline: none;
+    height: 70px;
+    width: 200px;
+    margin-top: 20px;
+    border: 3px white solid;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+.contact__form{
+    margin-top: 20px;
+ display: grid;
+    grid-template: 1fr 1fr 1fr/50% 50%;
+    grid-template-areas:"name email" "text1 text1" "submit .";
+    grid-gap: 10px 10px;
+height: 400px;
+}
+.name{
+    grid-area: name;
+}
+.email{
+    grid-area: email;
+;
+}
+.text1{
+    grid-area: text1;
+
+}
+.submit{
+    grid-area: submit;
+}
+.contact__text{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contact__button{
+    outline: none;
+    border-radius: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #28426e ;
+}
